@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="417.0" prefWidth="490.0" spacing="20.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label fx:id="welcomeText" alignment="TOP_CENTER" text="My Review Game">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Label text="v 1.2" />
+      <Separator prefWidth="200.0" />
+      <ImageView fitHeight="363.0" fitWidth="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../mruphoto.jpeg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="200.0">
+         <children>
+            <Label fx:id="correctLabel" text="Label">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="incorrectLabel" alignment="BOTTOM_LEFT" contentDisplay="CENTER" text="Label">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label fx:id="questionLabel" prefHeight="48.0" prefWidth="450.0" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <HBox alignment="CENTER" prefHeight="79.0" prefWidth="450.0" spacing="10.0">
+         <children>
+            <Button fx:id="buttonA" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="40.0" prefWidth="200.0" text="Button" textAlignment="CENTER" textOverrun="CLIP" />
+            <Button fx:id="buttonB" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="40.0" prefWidth="200.0" text="Button" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button fx:id="buttonC" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="40.0" prefWidth="200.0" text="Button" />
+            <Button fx:id="buttonD" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="40.0" prefWidth="200.0" text="Button" />
+         </children>
+      </HBox>
+      <Button fx:id="submitButton" mnemonicParsing="false" onAction="#buttonClicked" text="Submit" />
+   </children>
+</VBox>
