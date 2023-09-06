@@ -1,3 +1,5 @@
+// i needed this comment to commit and push a second time
+
 package com.example.demo;
 
 import javafx.event.ActionEvent;
@@ -107,7 +109,6 @@ public class HelloController {
                 thisStage.close();
             }
             resetColors();
-
             if (selectedButton.equals("Button A")) {
                 buttonClicked.setStyle("-fx-background-color: #008000; -fx-text-fill: black; -fx-font-size: 16px;");
                 numCorrect++;
